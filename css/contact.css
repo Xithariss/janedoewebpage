@@ -1,6 +1,6 @@
 main {
 	margin: 0 auto;
-	height: 80vh;
+	min-height: 80vh;
 }
 
 .banner_contact,
@@ -31,3 +31,7 @@ main {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+/* .banner_contact:last-of-type {
+	margin-bottom: 100px;
+} */
