@@ -1,0 +1,49 @@
+main {
+	margin: 0 auto;
+}
+
+.banner_video, .banner_title {
+	width: 50%;
+	margin-left: 25%;
+}
+
+.banner_title {
+	margin-top: 100px;
+}
+
+.banner_title h1 {
+	margin-bottom: 20px;
+	font-size: 2em;
+}
+
+.banner_video:last-of-type {
+	margin-bottom: 100px;
+}
+
+.banner_video h1 {
+	font-size: 2em;
+}
+
+.banner_video:first-of-type iframe {
+	margin-top: 30px;
+}
+
+.banner_video ul {
+	padding: 20px 50px;
+}
+
+.banner_video p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 480px) {
+	.banner_video, .banner_title {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	.banner_video ul {
+		padding: 20px 20px;
+	}
+}

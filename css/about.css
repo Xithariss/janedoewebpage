@@ -1,0 +1,39 @@
+.banner_description {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.banner_description h1 {
+    font-size: 2em;
+}
+
+.banner_description h2,
+.banner_description h3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.banner_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+	padding: 10px;
+	margin-bottom: 100px;
+}
+.banner_img img {
+    width: 30%;
+}
+
+@media screen and (min-width: 280px) and (max-width: 540px) {
+    .banner_img img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 541px) and (max-width: 1024px) {
+    .banner_img img {
+        width: 60%;
+    }
+}

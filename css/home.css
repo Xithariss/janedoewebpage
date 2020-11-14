@@ -1,0 +1,9 @@
+.banner_section {
+	max-height: 80vh;
+	overflow: hidden;
+}
+
+.banner_section img {
+	margin-top: -10vw;
+	width: 100%;
+}
