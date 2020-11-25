@@ -1,23 +1,23 @@
 main {
 	margin: 0 auto;
-	min-height: 80vh;
+    min-height: 80vh;
 }
 
 main > h1 {
-    margin-top: 50px;
-    margin-bottom: 30px;
-    margin-left: 25vw;
+    margin: 50px auto 30px;
+    width: 50%;
+}
+
+.banner_contact,
+.contact_info {
+    margin: 0 auto;
+    width: 50%;
 }
 
 .contact_location_infos {
     display: flex;
     margin-bottom: 50px;
-}
-
-.banner_contact,
-.contact_info {
-    width: 50vw;
-    margin-left: 25vw;
+    width: 100%;
 }
 
 .contact_info form {
@@ -121,4 +121,46 @@ main > h1 {
 .banner_contact hr  {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+@media screen and (min-width: 816px) and (max-width: 1597px) {
+    .contact_location_infos {
+        flex-direction: column;
+    }
+
+    .contact_location_infos form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact_location_infos .location {
+        width: 100%;
+    }
+}
+/* and (min-width: 816px)  */
+@media screen and (max-width: 815px) {
+    main > h1 {
+        margin: 50px auto 30px;
+        width: 100%;
+        padding: 10px
+    }
+    
+    .banner_contact,
+    .contact_info {
+        width: 100%;
+        padding: 10px
+    }
+
+    .contact_location_infos {
+        flex-direction: column;
+    }
+
+    .contact_location_infos form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact_location_infos .location {
+        width: 100%;
+    }
 }

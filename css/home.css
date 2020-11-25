@@ -29,10 +29,14 @@
     margin: 20px 0;
 }
 
-.jane_doe_musics img,
+.jane_doe_musics picture,
 .jane_doe_musics ol {
     display: block;
     width: 50%;
+}
+
+.jane_doe_musics picture img {
+    width: 100%;
 }
 
 .jane_doe_musics ol li {
@@ -49,4 +53,41 @@
 
 .jane_doe_musics ol li a:hover {
     text-decoration: underline;
+}
+
+@media screen and (min-width: 721px) and (max-width: 989px) {
+    .content {
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 50px;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 541px) and (max-width: 720px) {
+    .content {
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 20px;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 540px)  {
+    .content {
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 10px;
+        margin-top: 50px;
+    }
+
+    .jane_doe_musics {
+        flex-direction: column;
+    }
+
+    .jane_doe_musics picture,
+    .jane_doe_musics ol {
+        width: 100%;
+        padding: 0 20px;
+    }
 }

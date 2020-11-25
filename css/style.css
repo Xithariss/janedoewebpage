@@ -54,3 +54,11 @@ footer {
     height: 5vh;
     background-color: #ccc;
 }
+
+@media screen and (max-width: 540px) {
+    nav ul li {
+        display: block;
+        padding: 10px 20px;
+        width: 100%;
+    }
+}
