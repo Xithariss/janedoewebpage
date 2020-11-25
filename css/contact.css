@@ -3,18 +3,109 @@ main {
 	min-height: 80vh;
 }
 
+main > h1 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 25vw;
+}
+
+.contact_location_infos {
+    display: flex;
+    margin-bottom: 50px;
+}
+
 .banner_contact,
-.banner_title {
+.contact_info {
     width: 50vw;
     margin-left: 25vw;
 }
 
-.banner_title {
-    padding-top: 100px;
+.contact_info form {
+    width: 50%;
 }
 
-.banner_title h1 {
-    font-size: 2em;
+.contact_info .location {
+    width: 50%;
+}
+
+.contact_info .location iframe {
+    width: 100%;
+}
+
+.contact_info label {
+    display: inline-block;
+    width: 90%;
+}
+
+.contact_info input[type='text'],
+.contact_info input[type='email'],
+.contact_info textarea {
+    margin-bottom: 20px;
+    padding: 5px 10px;
+}
+
+.contact_info input[type='text'],
+.contact_info input[type='email'],
+.contact_info textarea {
+    width: 90%;
+}
+
+.contact_info textarea {
+    resize: none;
+}
+
+.input_radio,
+.input_checkbox {
+    display: inline;
+}
+
+.input_radio input,
+.input_checkbox input {
+    margin-right: 10px;
+    display: none;
+}
+
+.input_radio span,
+.input_checkbox span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    padding: 6px;
+    background-color: transparent;
+    border: 1px solid #555;
+}
+
+.input_radio span {
+    border-radius: 50%;
+}
+.input_checkbox span {
+    border-radius: 2px;
+}
+
+.input_radio span:hover,
+.input_checkbox span:hover {
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+.contact_info input[type='radio']:checked + span,
+.contact_info input[type='checkbox']:checked + span {
+    background-color: #e3422d;
+}
+
+.contact_info button {
+    margin-top: 20px;
+    padding: 7px 15px;
+    background-color: #e3422d;
+    border: none;
+    font-weight: bold;
+    color: #f2f2f2;
+    font-size: 14px;
+}
+
+.contact_info button:hover {
+    cursor: pointer;
+    background-color: #df2e16;
 }
 
 .banner_contact {
@@ -31,7 +122,3 @@ main {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
-/* .banner_contact:last-of-type {
-	margin-bottom: 100px;
-} */

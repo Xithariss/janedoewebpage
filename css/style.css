@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    padding: 20px;
+    padding: 20px 20px 0;
     height: auto;
 	text-align: center;
     border-bottom: 1px solid #ccc;
@@ -33,6 +33,12 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #111111;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #e3422d;
+    font-weight: bold;
 }
 
 main {
